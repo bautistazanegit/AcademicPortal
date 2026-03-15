@@ -1,0 +1,131 @@
+/* MANAGE GRADES MODERN STYLE */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.grade-card {
+    background: white;
+    padding: 45px;
+    border-radius: 20px;
+    width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    position: relative;
+}
+
+.top-right-back {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #64748b;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.top-right-back:hover { 
+    color: #dc2626; 
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-header h2 { 
+    margin: 0; 
+    color: #1e293b; 
+    font-size: 1.8rem; 
+}
+
+.card-header p { 
+    margin: 5px 0; 
+    color: #3b82f6; 
+    font-weight: 600; 
+    font-size: 0.95rem; 
+}
+
+.card-header small { 
+    color: #64748b; 
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1e293b;
+    font-size: 0.9rem;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 600;
+    color: #1e293b;
+    background: #f8fafc;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.btn-save {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.btn-save:hover { 
+    background: #2563eb;
+    transform: translateY(-2px);
+}
+
+.btn-clear {
+    background: #fef2f2;
+    color: #dc2626;
+    border: 2px solid #dc2626;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-clear:hover { 
+    background: #dc2626; 
+    color: white;
+}

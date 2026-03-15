@@ -1,0 +1,102 @@
+body {
+    background-color: #f1f5f9;
+    font-family: 'Inter', sans-serif;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+.table-container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.table-header h2 {
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.8rem;
+}
+
+.btn-dashboard {
+    text-decoration: none;
+    background: #3b82f6;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-dashboard:hover {
+    background: #2563eb; 
+    transform: translateY(-2px); 
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.styled-table th {
+    text-align: left;
+    padding: 15px;
+    background: #f8fafc;
+    color: #64748b;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.styled-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #1e293b;
+}
+
+.styled-table tr:last-child td {
+    border-bottom: none;
+}
+
+.id-col { 
+    font-weight: 600; 
+    color: #64748b; 
+}
+
+.user-col { 
+    font-weight: 600; 
+    color: #1e293b; 
+}
+
+.course-badge {
+    background: #eff6ff;
+    color: #3b82f6;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.styled-table tr:hover {
+    background-color: #f8fafc;
+}

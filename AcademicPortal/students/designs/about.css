@@ -1,0 +1,195 @@
+.about-container {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-header-text {
+    text-align: center;
+    margin-bottom: 50px;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.about-header-text h2 {
+    font-size: 2.8rem;
+    color: #1e293b;
+    margin-bottom: 15px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #3b82f6, #1e40af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about-header-text p {
+    color: #64748b;
+    max-width: 600px;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    margin: 0 auto;
+}
+
+/* Slideshow Container Configuration */
+.swiper {
+    width: 100%;
+    max-width: none;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.swiper:hover {
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.swiper-wrapper {
+    transition-timing-function: linear !important;
+    align-items: center;
+}
+
+.swiper-wrapper.paused {
+    animation-play-state: paused !important;
+    transition: none !important;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 500px !important;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+/* Developer Card Style */
+.dev-card {
+    background: white;
+    width: 100%;
+    padding: 40px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 450px;
+    transition: all 0.3s ease;
+}
+
+.swiper:hover .dev-card {
+    transform: scale(1.02);
+}
+
+.dev-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, #3b82f6, #1e40af);
+}
+
+/* Avatar/Image Wrapper */
+.img-wrapper {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+    box-shadow: 0 15px 30px rgba(59, 130, 246, 0.3);
+    transition: all 0.3s ease;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background: white;
+    border: 3px solid white;
+}
+
+/* Text Styles inside Card */
+.dev-card h3 {
+    color: #1e293b;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.dev-card .role {
+    color: #3b82f6;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #eff6ff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    border: 1px solid #dbeafe;
+}
+
+.dev-description {
+    margin-top: 15px;
+}
+
+.dev-description p {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 30px 15px;
+    }
+    
+    .swiper {
+        max-width: 90%;
+    }
+    
+    .about-header-text h2 {
+        font-size: 2.2rem;
+    }
+    
+    .about-header-text p {
+        font-size: 1rem;
+    }
+    
+    .img-wrapper {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .dev-card {
+        padding: 30px 20px;
+    }
+}
